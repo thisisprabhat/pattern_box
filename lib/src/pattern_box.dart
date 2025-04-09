@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'enum/pattern_box_type.dart';
-import '../utils/string_ext.dart';
+import 'utils/string_ext.dart';
 
 abstract class PatternBoxBase extends CustomPainter {
   final double gap;

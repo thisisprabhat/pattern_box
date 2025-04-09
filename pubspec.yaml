@@ -1,7 +1,29 @@
 name: pattern_box
 description: "A collection of patterned background in Flutter using Custom Painter"
+homepage: https://github.com/thisisprabhat/pattern_box.git
+repository: https://github.com/thisisprabhat/pattern_box.git
+
 version: 0.0.1
-homepage:
+
+topics:
+- canvas pattern
+- background
+- custom painter
+- pattern
+- decoration
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+# screenshots:
+#   - description: The colored_log package logo.
+#     path: example/images/colored_log.png
+
 
 
 environment:
@@ -22,3 +44,6 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+
+
+license: MIT
