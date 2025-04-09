@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 import 'enum/pattern_box_type.dart';
 import 'utils/string_ext.dart';
 
-abstract class PatternBoxBase extends CustomPainter {
+abstract class PatternBox extends CustomPainter {
   final double gap;
   final Color color;
   final double thickness;
-  final PatternBoxType type;
+  final PatternType type;
 
-  PatternBoxBase({
+  String get patternName => type.name.toTitleCase;
+
+  PatternBox({
     super.repaint,
     required this.gap,
     required this.type,

@@ -1,1 +1,24 @@
-enum PatternBoxType { dot }
+enum PatternType {
+  dots,
+  texture,
+  flower,
+  grid,
+  plus,
+  circular,
+  diamond,
+  wave,
+  stripe,
+  dottedWave,
+  checkbox,
+  honeyComb,
+  webMatrix,
+  concentricCircle,
+  concentricDottedCircle,
+  concentricCircleWave,
+  concentricPolygon,
+
+  crosshatch,
+  subtlepatch,
+  checkers,
+  raindrops,
+}
