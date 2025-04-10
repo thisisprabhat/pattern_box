@@ -1,14 +1,14 @@
 name: pattern_box
 description: "A collection of patterned background in Flutter using Custom Painter"
-homepage: https://github.com/thisisprabhat/pattern_box.git
 repository: https://github.com/thisisprabhat/pattern_box.git
+homepage: https://github.com/thisisprabhat/pattern_box.git
 
-version: 0.2.0
+version: 0.3.0
 
 topics:
-- canvas pattern
+- canvas
 - background
-- custom painter
+- painter
 - pattern
 - decoration
 
@@ -42,7 +42,7 @@ dev_dependencies:
 flutter:
   
   # assets:
-  #   - assets/patterns
+  #   - assets/patterns/
 
 
 license: MIT

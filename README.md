@@ -6,7 +6,7 @@
 
 ## 🚀 Features
 
-- 🧩 14+ built-in pattern painters
+- 🧩 15+ built-in pattern painters
 - 🎯 Customizable properties like color, gap, thickness, and alignment
 - 🖼️ Easy integration with `CustomPaint`
 - 🧪 Example app included with previews
@@ -35,6 +35,9 @@ Here’s the current collection of prebuilt patterns:
 | `PlusPainter`              | Repeating plus (+) signs           |
 | `CircularPainter`          | Magic Circular Pattern             |
 | `WebMatrixPainter`         | Geometric net-like web pattern     |
+| `MossaicPainter`           | Mossaic Pattern with different shades|
+| `IsomatricGrid`            | Isomatric grid Pattern outline     |
+| `IsomatricGrid3D`          | Isomatric grid 3D Pattern with depth effect|
 
 ---
 

@@ -49,5 +49,8 @@ abstract class PatternBox extends CustomPainter {
     PlusPainter(),
     CircularPainter(),
     WebMatrixPainter(),
+    IsometricGridPainter(),
+    IsometricGrid3DPainter(),
+    MosaicPainter(),
   ];
 }
