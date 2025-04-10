@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'enum/pattern_box_type.dart';
-import 'utils/string_ext.dart';
+import '../pattern_box.dart';
+import 'utils/extensions.dart';
 
 abstract class PatternBox extends CustomPainter {
   final double gap;
@@ -30,6 +30,24 @@ abstract class PatternBox extends CustomPainter {
 
   @override
   String toString() {
-    return '${runtimeType.toString().toTitleCase}(color: $color, gap: $gap, thickness: $thickness, type: $type)';
+    return '${runtimeType.toString().toTitleCase.toPascalCase}(color: ${color.toHex}, gap: $gap, thickness: $thickness, type: $type)';
   }
+
+  static List<PatternBox> get patternList => [
+    StripePattern(),
+    HoneyCombPainter(),
+    ConcentricCircleWavePainter(),
+    ConcentricDottedCirclePainter(),
+    ConcentricPolygonPainter(),
+    ConcentricCirclePainter(),
+    WavePainter(),
+    DottedWavePainter(),
+    DotsPainter(),
+    DiamondPainter(),
+    GridPainter(),
+    CheckerboxPainter(),
+    PlusPainter(),
+    CircularPainter(),
+    WebMatrixPainter(),
+  ];
 }

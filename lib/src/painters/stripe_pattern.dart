@@ -9,7 +9,7 @@ class StripePattern extends PatternBox {
     Color? color,
     double? gap,
     double? thickness,
-    this.startsFrom = Alignment.topCenter,
+    this.startsFrom = Alignment.topLeft,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 2,

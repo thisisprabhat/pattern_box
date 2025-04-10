@@ -1,26 +1,49 @@
-# pattern_box
-A collection of patterned background in Flutter using Custom Painter.
+# 🎨 pattern_box
 
-## Features
+**pattern_box** is a Flutter package packed with a collection of eye-catching **custom painter-based patterns** — perfect for backgrounds, decorations, and dynamic UI elements.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 🚀 Features
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- 🧩 14+ built-in pattern painters
+- 🎯 Customizable properties like color, gap, thickness, and alignment
+- 🖼️ Easy integration with `CustomPaint`
+- 🧪 Example app included with previews
+- 📦 Lightweight and ready for production use
 
-## Usage
+---
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## 📦 Available Patterns
 
-```dart
-const like = 'sample';
-```
+Here’s the current collection of prebuilt patterns:
 
-## Additional information
+| Pattern Name                | Description                        |
+|----------------------------|------------------------------------|
+| `StripePattern`            | Horizontal, vertical, diagonal stripes |
+| `HoneyCombPainter`         | Classic beehive hexagon grid       |
+| `ConcentricCircleWavePainter` | Radiating circle waves           |
+| `ConcentricDottedCirclePainter` | Dotted radial symmetry         |
+| `ConcentricPolygonPainter` | Polygons growing outward           |
+| `ConcentricCirclePainter`  | Simple concentric circle rings     |
+| `WavePainter`              | Smooth sine-style wave patterns    |
+| `DottedWavePainter`        | Wavy paths made from dots          |
+| `DotsPainter`              | Grid of dots                       |
+| `DiamondPainter`           | Criss-crossing diamond pattern     |
+| `GridPainter`              | Square tile grid                   |
+| `CheckerboxPainter`        | Classic checkerboard               |
+| `PlusPainter`              | Repeating plus (+) signs           |
+| `CircularPainter`          | Magic Circular Pattern             |
+| `WebMatrixPainter`         | Geometric net-like web pattern     |
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+---
+
+## 🧪 Example App
+
+This package includes a sample app to preview all patterns.
+
+Run it with:
+
+```bash
+flutter pub get
+flutter run --example
