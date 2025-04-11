@@ -4,12 +4,13 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class PlusPainter extends PatternBox {
-  PlusPainter({Color? color, double? gap, double? thickness})
+  PlusPainter({Color? color, double? gap, double? thickness, bool? repaint})
     : super(
         color: color ?? Colors.grey.withAlpha(100),
         thickness: thickness ?? 1,
         type: PatternType.plus,
         gap: gap ?? 10,
+        repaint: repaint ?? false,
       );
 
   @override

@@ -1,3 +1,7 @@
+## 0.3.05
+
+* Added animated pattern wrapper, Updated example main.dart
+
 ## 0.3.0 
 
 * Added Mossaic, isomatric, and isomatric_grid pattern

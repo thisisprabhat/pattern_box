@@ -41,6 +41,30 @@ Here’s the current collection of prebuilt patterns:
 
 ---
 
+## For AnimatedPatterns
+- We need to wrap patterns with AnimatedPatternBuilder
+- And set `repaint=true` inside pattern
+
+```dart
+AnimatedPatternBuilder(
+        repeat: true,
+        patterBuiilder: (value) {
+          final scale = 1 + 0.2 * value;
+          final rotation = value * 3.14;
+          return Transform.scale(
+            scale: scale,
+            child: Transform.rotate(
+              angle: rotation,
+              child: patternBox(
+                context,
+                WebMatrixPainter(repaint: true, gap: 10 + value * 5),
+              ),
+            ),
+          );
+        },
+      ),
+```
+
 ## 🧪 Example App
 
 This package includes a sample app to preview all patterns.

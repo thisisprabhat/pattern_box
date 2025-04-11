@@ -4,13 +4,18 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class CheckerboxPainter extends PatternBox {
-  CheckerboxPainter({Color? color, double? gap, double? thickness})
-    : super(
-        color: color ?? Colors.grey,
-        thickness: thickness ?? 1,
-        type: PatternType.checkbox,
-        gap: gap ?? 10,
-      );
+  CheckerboxPainter({
+    Color? color,
+    double? gap,
+    double? thickness,
+    bool? repaint,
+  }) : super(
+         color: color ?? Colors.grey,
+         thickness: thickness ?? 1,
+         type: PatternType.checkbox,
+         gap: gap ?? 10,
+         repaint: repaint ?? false,
+       );
 
   @override
   void paint(Canvas canvas, Size size) {

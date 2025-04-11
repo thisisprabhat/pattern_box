@@ -14,11 +14,13 @@ class WavePainter extends PatternBox {
     double? thickness,
     this.frequency = 3,
     this.amplitude = 10,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 2,
          type: PatternType.wave,
          gap: gap ?? 20,
+         repaint: repaint ?? false,
        );
 
   @override

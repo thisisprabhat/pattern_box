@@ -6,13 +6,18 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class HoneyCombPainter extends PatternBox {
-  HoneyCombPainter({Color? color, double? gap, double? thickness})
-    : super(
-        color: color ?? Colors.grey,
-        thickness: thickness ?? 1,
-        type: PatternType.honeyComb,
-        gap: gap ?? 10,
-      );
+  HoneyCombPainter({
+    Color? color,
+    double? gap,
+    double? thickness,
+    bool? repaint,
+  }) : super(
+         color: color ?? Colors.grey,
+         thickness: thickness ?? 1,
+         type: PatternType.honeyComb,
+         gap: gap ?? 10,
+         repaint: repaint ?? false,
+       );
 
   @override
   void paint(Canvas canvas, Size size) {

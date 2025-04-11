@@ -5,13 +5,18 @@ import 'package:flutter/material.dart';
 import '../../pattern_box.dart';
 
 class IsometricGridPainter extends PatternBox {
-  IsometricGridPainter({Color? color, double? gap, double? thickness})
-    : super(
-        color: color ?? Colors.grey,
-        thickness: thickness ?? 0.4,
-        gap: gap ?? 30,
-        type: PatternType.isometric,
-      );
+  IsometricGridPainter({
+    Color? color,
+    double? gap,
+    double? thickness,
+    bool? repaint,
+  }) : super(
+         color: color ?? Colors.grey,
+         thickness: thickness ?? 0.4,
+         gap: gap ?? 30,
+         type: PatternType.isometric,
+         repaint: repaint ?? false,
+       );
 
   @override
   void paint(Canvas canvas, Size size) {

@@ -4,12 +4,13 @@ import '../pattern_box_base.dart';
 import '../enum/pattern_box_type.dart';
 
 class MosaicPainter extends PatternBox {
-  MosaicPainter({Color? color, double? gap, double? thickness})
+  MosaicPainter({Color? color, double? gap, double? thickness, bool? repaint})
     : super(
         color: color ?? Colors.grey,
         thickness: thickness ?? 4,
         type: PatternType.mosaic,
         gap: gap ?? 20,
+        repaint: repaint ?? false,
       );
 
   @override

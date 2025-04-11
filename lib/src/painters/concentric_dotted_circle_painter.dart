@@ -14,11 +14,13 @@ class ConcentricDottedCirclePainter extends PatternBox {
     double? thickness,
     this.maxRadius,
     this.count,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 2,
          type: PatternType.concentricDottedCircle,
          gap: gap ?? 20,
+         repaint: repaint ?? false,
        );
 
   @override

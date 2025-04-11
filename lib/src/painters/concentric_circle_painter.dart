@@ -10,11 +10,13 @@ class ConcentricCirclePainter extends PatternBox {
     double? gap,
     double? thickness,
     this.count,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 1,
          type: PatternType.circular,
          gap: gap ?? 4,
+         repaint: repaint ?? false,
        );
 
   @override

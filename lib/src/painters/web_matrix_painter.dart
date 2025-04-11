@@ -14,11 +14,13 @@ class WebMatrixPainter extends PatternBox {
     double? thickness,
     this.points = 12,
     this.layers = 6,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 1.5,
          type: PatternType.webMatrix,
          gap: gap ?? 34,
+         repaint: repaint ?? false,
        );
 
   @override

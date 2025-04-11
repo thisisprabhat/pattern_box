@@ -10,11 +10,13 @@ class StripePattern extends PatternBox {
     double? gap,
     double? thickness,
     this.startsFrom = Alignment.topLeft,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 2,
          type: PatternType.stripe,
          gap: gap ?? 10,
+         repaint: repaint ?? false,
        );
 
   @override

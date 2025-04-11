@@ -8,11 +8,12 @@ abstract class PatternBox extends CustomPainter {
   final Color color;
   final double thickness;
   final PatternType type;
+  final bool repaint;
 
   String get patternName => type.name.toTitleCase;
 
   PatternBox({
-    super.repaint,
+    required this.repaint,
     required this.gap,
     required this.type,
     required this.color,
@@ -25,7 +26,7 @@ abstract class PatternBox extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
+    return repaint;
   }
 
   @override

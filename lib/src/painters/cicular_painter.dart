@@ -14,11 +14,13 @@ class CircularPainter extends PatternBox {
     double? thickness,
     this.dotSize,
     this.isDotFilled = false,
+    bool? repaint,
   }) : super(
          color: color ?? Colors.grey,
          thickness: thickness ?? 1,
          type: PatternType.circular,
          gap: gap ?? 90,
+         repaint: repaint ?? false,
        );
 
   @override

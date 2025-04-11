@@ -4,12 +4,13 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class DotsPainter extends PatternBox {
-  DotsPainter({Color? color, double? gap, double? thickness})
+  DotsPainter({Color? color, double? gap, double? thickness, bool? repaint})
     : super(
         color: color ?? Colors.grey,
         thickness: thickness ?? 10,
         type: PatternType.dots,
         gap: gap ?? 10,
+        repaint: repaint ?? false,
       );
 
   @override

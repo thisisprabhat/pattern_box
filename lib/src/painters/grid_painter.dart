@@ -4,12 +4,13 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class GridPainter extends PatternBox {
-  GridPainter({Color? color, double? gap, double? thickness})
+  GridPainter({Color? color, double? gap, double? thickness, bool? repaint})
     : super(
         color: color ?? Colors.grey,
         thickness: thickness ?? 0.2,
         type: PatternType.grid,
         gap: gap ?? 10,
+        repaint: repaint ?? false,
       );
 
   @override

@@ -6,13 +6,18 @@ import '../enum/pattern_box_type.dart';
 import '../pattern_box_base.dart';
 
 class DottedWavePainter extends PatternBox {
-  DottedWavePainter({Color? color, double? gap, double? thickness})
-    : super(
-        color: color ?? Colors.grey,
-        thickness: thickness ?? 1.5,
-        type: PatternType.dottedWave,
-        gap: gap ?? 10,
-      );
+  DottedWavePainter({
+    Color? color,
+    double? gap,
+    double? thickness,
+    bool? repaint,
+  }) : super(
+         color: color ?? Colors.grey,
+         thickness: thickness ?? 1.5,
+         type: PatternType.dottedWave,
+         gap: gap ?? 10,
+         repaint: repaint ?? false,
+       );
 
   @override
   void paint(Canvas canvas, Size size) {
