@@ -56,6 +56,7 @@ class AnimatedPatternBuilder extends StatefulWidget {
     super.key,
     required this.patterBuiilder,
     this.repeat = true,
+    this.reverse = true,
     this.initialDelayInMS = 100,
     this.durationInMS = 1000,
     this.curve = Curves.linear,
@@ -63,6 +64,7 @@ class AnimatedPatternBuilder extends StatefulWidget {
   });
   final PatterBuiilder patterBuiilder;
   final bool repeat;
+  final bool reverse;
   final int durationInMS;
   final int initialDelayInMS;
   final Curve curve;
@@ -99,7 +101,7 @@ class _AnimatedPatternBuilderState extends State<AnimatedPatternBuilder>
 
     Future.delayed(Duration(milliseconds: widget.initialDelayInMS)).then((t) {
       if (widget.repeat) {
-        _controller.repeat(reverse: true);
+        _controller.repeat(reverse: widget.reverse);
       } else {
         _controller.forward();
       }

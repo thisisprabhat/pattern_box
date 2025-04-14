@@ -3,7 +3,7 @@ description: "A collection of patterned background in Flutter using Custom Paint
 repository: https://github.com/thisisprabhat/pattern_box.git
 homepage: https://github.com/thisisprabhat/pattern_box.git
 
-version: 0.5.0
+version: 0.5.1
 
 topics:
 - canvas

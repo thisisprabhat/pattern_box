@@ -1,3 +1,7 @@
+## 0.5.1
+
+* AnimatedPatternBuilder reverse animation controller
+
 ## 0.5.0
 
 * Added PatternBoxWidget()
