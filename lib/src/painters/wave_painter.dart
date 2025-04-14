@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../enum/pattern_box_type.dart';
-import '../pattern_box_base.dart';
+import '../pattern_box.dart';
 
 class WavePainter extends PatternBox {
   final double frequency;

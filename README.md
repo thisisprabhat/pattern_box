@@ -65,6 +65,29 @@ AnimatedPatternBuilder(
       ),
 ```
 
+## PatternBoxWidget
+- We can use pattern out of the box with this widget
+- We can customize its appeareance
+
+```dart
+PatternBoxWidget(
+  pattern: WavePainter(),
+  patternGradient: LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Colors.blue, Colors.white, Colors.transparent],
+    stops: [0.2, 0.5, 0.8],
+  ),
+  border: Border.all(color: Colors.white),
+  borderRadius: BorderRadius.circular(44),
+  backgroundGradient: LinearGradient(
+    colors: [Colors.black, Colors.blueGrey],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  ),
+)
+```
+
 ## 🧪 Example App
 
 This package includes a sample app to preview all patterns.

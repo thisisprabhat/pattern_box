@@ -1,4 +1,11 @@
-## 0.3.05
+## 0.5.0
+
+* Added PatternBoxWidget()
+* An out of the box widget to use Patterns or CustomPaints objects
+* It offers lots of customizability
+
+
+## 0.3.5
 
 * Added animated pattern wrapper, Updated example main.dart
 

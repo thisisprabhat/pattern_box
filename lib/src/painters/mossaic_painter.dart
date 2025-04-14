@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../pattern_box_base.dart';
+import '../pattern_box.dart';
 import '../enum/pattern_box_type.dart';
 
 class MosaicPainter extends PatternBox {

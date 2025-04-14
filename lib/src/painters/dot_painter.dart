@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../enum/pattern_box_type.dart';
-import '../pattern_box_base.dart';
+import '../pattern_box.dart';
 
 class DotsPainter extends PatternBox {
   DotsPainter({Color? color, double? gap, double? thickness, bool? repaint})

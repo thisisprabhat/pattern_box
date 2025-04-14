@@ -20,5 +20,6 @@ export 'src/painters/concentric_dotted_circle_painter.dart';
 
 //! Other Export
 export '/src/enum/pattern_box_type.dart';
-export '/src/pattern_box_base.dart';
+export 'src/pattern_box.dart';
 export '/src/animated_pattern_builder.dart';
+export '/src/pattern_box_widget.dart';

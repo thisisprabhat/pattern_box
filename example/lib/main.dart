@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen>
   void initState() {
     super.initState();
     _pageController = PageController();
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.dispose();
   }
 
-  final tabs = ['Static', 'Animated'];
+  final tabs = ['Static', 'Animated', 'PatternBox Widget'];
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,6 @@ class _HomeScreenState extends State<HomeScreen>
     return Scaffold(
       appBar: AppBar(
         title: Text('Home Screen'),
-
         bottom: TabBar(
           controller: _tabController,
           onTap:
@@ -64,7 +63,10 @@ class _HomeScreenState extends State<HomeScreen>
               ),
           tabs: List.generate(
             tabs.length,
-            (i) => Padding(padding: EdgeInsets.all(8), child: Text(tabs[i])),
+            (i) => Padding(
+              padding: EdgeInsets.all(8),
+              child: Text(tabs[i], textAlign: TextAlign.center),
+            ),
           ),
         ),
       ),
@@ -85,6 +87,25 @@ class _HomeScreenState extends State<HomeScreen>
             itemCount: animatedPatternList(context).length,
             itemBuilder:
                 (context, index) => animatedPatternList(context)[index],
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: PatternBoxWidget(
+              pattern: WavePainter(),
+              patternGradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Colors.blue, Colors.white, Colors.transparent],
+                stops: [0.2, 0.5, 0.8],
+              ),
+              border: Border.all(color: Colors.white),
+              borderRadius: BorderRadius.circular(44),
+              backgroundGradient: LinearGradient(
+                colors: [Colors.black, Colors.blueGrey],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
+            ),
           ),
         ],
       ),
@@ -137,32 +158,6 @@ class _HomeScreenState extends State<HomeScreen>
           );
         },
       ),
-      // AnimatedPatternBuilder(
-      //   repeat: true,
-      //   patterBuiilder: (value) {
-      //     final scale = 1 + 0.2 * value;
-      //     final rotation = value * 3.14;
-      //     return Transform.scale(
-      //       scale: scale,
-      //       child: Transform.rotate(
-      //         angle: rotation,
-      //         child: patternBox(
-      //           context,
-      //           WebMatrixPainter(repaint: true, gap: 10 + value * 5),
-      //         ),
-      //       ),
-      //     );
-      //   },
-      // ),
-      // AnimatedPatternBuilder(
-      //   repeat: true,
-      //   patterBuiilder: (value) {
-      //     return patternBox(
-      //       context,
-      //       StripePattern(repaint: true, gap: 20 * value),
-      //     );
-      //   },
-      // ),
     ];
   }
 }
