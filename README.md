@@ -38,6 +38,7 @@ Here’s the current collection of prebuilt patterns:
 | `MossaicPainter`           | Mossaic Pattern with different shades|
 | `IsomatricGrid`            | Isomatric grid Pattern outline     |
 | `IsomatricGrid3D`          | Isomatric grid 3D Pattern with depth effect|
+| `StarsPainter`             | Random sized stars with random colors and position|
 
 ---
 

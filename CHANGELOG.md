@@ -1,3 +1,7 @@
+## 0.5.2
+
+* `StarsPainter` a collection of random sized and positioned pattern
+
 ## 0.5.1
 
 * AnimatedPatternBuilder reverse animation controller

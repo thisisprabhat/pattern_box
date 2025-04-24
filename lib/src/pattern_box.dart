@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../pattern_box.dart';
+import 'painters/stars_painter.dart';
 import 'utils/extensions.dart';
 
 abstract class PatternBox extends CustomPainter {
@@ -53,5 +54,6 @@ abstract class PatternBox extends CustomPainter {
     IsometricGridPainter(),
     IsometricGrid3DPainter(),
     MosaicPainter(),
+    StarsPainter(),
   ];
 }
