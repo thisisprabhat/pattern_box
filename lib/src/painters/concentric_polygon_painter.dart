@@ -9,7 +9,7 @@ class ConcentricPolygonPainter extends PatternBox {
   final int? count;
   ConcentricPolygonPainter({
     Color? color,
-    double? gap,
+
     double? thickness,
     this.count,
     bool? repaint,
@@ -17,7 +17,7 @@ class ConcentricPolygonPainter extends PatternBox {
          color: color ?? Colors.grey,
          thickness: thickness ?? 1,
          type: PatternType.concentricPolygon,
-         gap: gap ?? 4,
+         gap: 4,
          repaint: repaint ?? false,
        );
 
@@ -37,7 +37,6 @@ class ConcentricPolygonPainter extends PatternBox {
       final path = Path();
       for (int i = 0; i < sides; i++) {
         double angle = (2 * pi * i / sides);
-        //TODO: gap saperator logic
         final x = center.dx + cos(angle) * radius * r / 5;
         final y = center.dy + sin(angle) * radius * r / 5;
         if (i == 0) {

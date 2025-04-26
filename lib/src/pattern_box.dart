@@ -55,5 +55,6 @@ abstract class PatternBox extends CustomPainter {
     IsometricGrid3DPainter(),
     MosaicPainter(),
     StarsPainter(),
+    KaleidoscopePainter(),
   ];
 }

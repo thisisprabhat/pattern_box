@@ -1,3 +1,7 @@
+## 0.5.3
+
+* `KaleidoscopePainter` Whenever rebuilds, it creates new set of pattern
+
 ## 0.5.2
 
 * `StarsPainter` a collection of random sized and positioned pattern

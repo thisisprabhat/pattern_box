@@ -9,6 +9,7 @@ export 'src/painters/mossaic_painter.dart';
 export 'src/painters/diamond_painter.dart';
 export 'src/painters/honeycomb_painter.dart';
 export 'src/painters/checkbox_painter.dart';
+export 'src/painters/kalidioscope_painter.dart';
 export 'src/painters/web_matrix_painter.dart';
 export 'src/painters/dotted_wave_painter.dart';
 export 'src/painters/isomatric_grid_painter.dart';

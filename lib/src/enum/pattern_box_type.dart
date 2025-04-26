@@ -12,6 +12,7 @@ enum PatternType {
   isometric3D,
   dottedWave,
   checkbox,
+  kaleidoscope,
   stars,
   mosaic,
   honeyComb,
