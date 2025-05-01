@@ -2,6 +2,10 @@
 
 **pattern_box** is a Flutter package packed with a collection of eye-catching **custom painter-based patterns** — perfect for backgrounds, decorations, and dynamic UI elements.
 
+
+---
+![All available patterns](example/screenshots/availablePatterns.png)
+
 ---
 
 ## 🚀 Features
