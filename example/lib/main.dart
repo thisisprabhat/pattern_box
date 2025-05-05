@@ -77,38 +77,58 @@ class _HomeScreenState extends State<HomeScreen>
         },
         children: [
           //Static pattern list
-          ListView.builder(
-            itemCount: patternList.length,
-            itemBuilder:
-                (context, index) => patternBox(context, patternList[index]),
-          ),
+          staticPatternList(patternList),
           //Animated Pattern List
-          ListView.builder(
-            itemCount: animatedPatternList(context).length,
-            itemBuilder:
-                (context, index) => animatedPatternList(context)[index],
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: PatternBoxWidget(
-              pattern: WavePainter(),
-              patternGradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.blue, Colors.white, Colors.transparent],
-                stops: [0.2, 0.5, 0.8],
-              ),
-              border: Border.all(color: Colors.white),
-              borderRadius: BorderRadius.circular(44),
-              backgroundGradient: LinearGradient(
-                colors: [Colors.black, Colors.blueGrey],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-            ),
-          ),
+          animatedPatterns(context),
+          //Customized PatternBox
+          customizedPatternBox(),
         ],
       ),
+    );
+  }
+
+  Padding customizedPatternBox() {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: PatternBoxWidget(
+        pattern: WavePainter(),
+        patternGradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.blue, Colors.white, Colors.transparent],
+          stops: [0.2, 0.5, 0.8],
+        ),
+        border: Border.all(color: Colors.white),
+        borderRadius: BorderRadius.circular(44),
+        backgroundGradient: LinearGradient(
+          colors: [Colors.black, Colors.blueGrey],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
+      ),
+    );
+  }
+
+  ListView animatedPatterns(BuildContext context) {
+    return ListView(
+      children: [
+        AnimatedPatternBuilder(
+          repeat: true,
+          patterBuiilder: (value) {
+            return patternBox(
+              context,
+              WavePainter(repaint: true, amplitude: 20 * value),
+            );
+          },
+        ),
+      ],
+    );
+  }
+
+  ListView staticPatternList(List<PatternBox> patternList) {
+    return ListView.builder(
+      itemCount: patternList.length,
+      itemBuilder: (context, index) => patternBox(context, patternList[index]),
     );
   }
 
@@ -145,20 +165,6 @@ class _HomeScreenState extends State<HomeScreen>
         ),
       ),
     );
-  }
-
-  List<Widget> animatedPatternList(context) {
-    return [
-      AnimatedPatternBuilder(
-        repeat: true,
-        patterBuiilder: (value) {
-          return patternBox(
-            context,
-            WavePainter(repaint: true, amplitude: 20 * value),
-          );
-        },
-      ),
-    ];
   }
 }
 
